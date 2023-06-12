@@ -1,5 +1,36 @@
 <script lang="ts">
-    import "modern-normalize/modern-normalize.css";
+	import 'modern-normalize/modern-normalize.css';
+    import '../styles/main.scss'
+	import Navbar from '$components/Navbar.svelte';
 </script>
 
-<slot />
+<div class="main">
+    <header>
+        <Navbar />
+    </header>
+    <main>
+        <slot></slot>
+    </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</div>
+
+<style lang="scss">
+	.main {
+		display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+        min-height: 100vh;
+        background-color: #161a1d;
+        color: white;
+
+        header {
+            min-height: 5rem;
+        }
+
+        main {
+            height: 100vh;
+        }
+	}
+</style>
