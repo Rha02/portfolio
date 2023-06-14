@@ -1,7 +1,27 @@
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #fff;
+    --text-color-light: #b3b3b3;
+    --border-color: #333;
+    --border-color-light: #666;
+    --border-color-lighter: #999;
+    --border-color-lightest: #ccc;
+    --accent-color: #22d3ee;
+}
+
+::selection {
+    background: var(--accent-color);
+    color: var(--text-color);
+}
+
 a {
     text-decoration: none;
     color: white;
-    &:hover, .active {
-        color: #29bf12;
+    &:hover {
+        transition: 0.2s;
+        color: var(--accent-color);
+    }
+    .active {
+        color: var(--accent-color);
     }
 }

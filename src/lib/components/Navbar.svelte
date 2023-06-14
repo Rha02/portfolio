@@ -44,10 +44,10 @@
         align-items: center;
         min-height: 5rem;
         position: fixed;
-        background-color: #161a1d;
+        background-color: var(--bg-color);
         z-index: 100;
         width: 100%;
-        border-bottom: #fff 1px solid;
+        border-bottom: var(--border-color) 1px solid;
         ul {
             display: flex;
             gap: 2rem;
@@ -63,16 +63,6 @@
             }
             li {
                 list-style: none;
-                a {
-                    text-decoration: none;
-                    color: white;
-                    &:hover {
-                        color: #29bf12;
-                    }
-                    &.active {
-                        color: #29bf12;
-                    }
-                }
             }
         }
         .title {

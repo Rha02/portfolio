@@ -22,8 +22,8 @@
         flex-direction: column;
         overflow-y: hidden;
         min-height: 100vh;
-        background-color: #161a1d;
-        color: white;
+        background-color: var(--bg-color);
+        color: var(--text-color);
 
         header {
             min-height: 5rem;
