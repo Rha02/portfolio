@@ -65,6 +65,7 @@
 					color: var(--text-color);
 					text-decoration: none;
                     transition: 0.2s;
+                    padding: 12px;
 					&:hover, &.active {
 						color: var(--accent-color);
 					}
