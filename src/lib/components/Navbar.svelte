@@ -66,8 +66,12 @@
 					text-decoration: none;
                     transition: 0.2s;
                     padding: 12px;
-					&:hover, &.active {
+					&:hover {
 						color: var(--cyan-color);
+					}
+					&.active {
+						color: var(--cyan-color);
+						text-shadow: 0 0 2px var(--cyan-color);
 					}
 				}
 			}

@@ -93,52 +93,5 @@
 		justify-content: flex-start;
 		gap: 1rem;
 		margin: 2rem 0 0 0;
-		button {
-			padding: 0.5rem 1rem;
-			border: none;
-			border-radius: 5px;
-			color: #fff;
-			font-size: 1rem;
-			font-weight: 500;
-			cursor: pointer;
-			transition: 0.15s;
-			display: flex;
-			align-items: center;
-			gap: 0.2rem;
-			border: 1px solid;
-			&.btn-red {
-				background-color: #f87171;
-				border-color: #f87171;
-				color: #f87171;
-				&:hover, &:focus {
-					box-shadow: 0 0 5px 2px #f87171;
-					text-shadow: 0 0 2px #f87171;
-					outline: none;
-				}
-			}
-			&.btn-green {
-				background-color: #4ade80;
-				border-color: #4ade80;
-				color: #4ade80;
-				&:hover, &:focus {
-					box-shadow: 0 0 5px 2px #4ade80;
-					text-shadow: 0 0 2px #4ade80;
-					outline: none;
-				}
-			}
-			&.btn-cyan {
-				background-color: var(--cyan-color);
-				border-color: var(--cyan-color);
-				color: var(--cyan-color);
-				&:hover, &:focus {
-					box-shadow: 0 0 5px 2px var(--cyan-color);
-					text-shadow: 0 0 2px var(--cyan-color);
-					outline: none;
-				}
-			}
-			&.btn-outline {
-				background-color: transparent;
-			}
-		}
 	}
 </style>
