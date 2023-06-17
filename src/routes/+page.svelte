@@ -2,6 +2,7 @@
 	import FileIcon from '$lib/icons/File.svelte';
 	import GithubIcon from '$lib/icons/Github.svelte';
 	import LinkedinIcon from '$lib/icons/Linkedin.svelte';
+	import Button from '$lib/components/Button.svelte';
 </script>
 
 <div class="content">
@@ -27,20 +28,20 @@
 				</div>
 			</div>
 			<div class="profile-buttons">
-				<button class="btn-red btn-outline">
+				<Button element="a" href="/" target="_blank" variant="outline" color="red">
 					<FileIcon width={16} height={16} stroke="#f87171" />Resume
-				</button>
-				<button class="btn-green btn-outline">
+				</Button>
+				<Button element="a" href="https://github.com/Rha02" target="_blank" variant="outline" color="green">
 					<GithubIcon width={16} height={16} fill="#4ade80" stroke="#4ade80" />GitHub
-				</button>
-				<button class="btn-cyan btn-outline">
+				</Button>
+				<Button element="a" href="https://www.linkedin.com/in/romuz-abdulhamidov/" target="_blank" variant="outline" color="cyan">
 					<LinkedinIcon
 						width={16}
 						height={16}
-						fill="var(--accent-color)"
-						stroke="var(--accent-color)"
+						fill="var(--cyan-color)"
+						stroke="var(--cyan-color)"
 					/>LinkedIn
-				</button>
+				</Button>
 			</div>
 		</div>
 	</div>
@@ -100,7 +101,7 @@
 			font-size: 1rem;
 			font-weight: 500;
 			cursor: pointer;
-			transition: 0.2s;
+			transition: 0.15s;
 			display: flex;
 			align-items: center;
 			gap: 0.2rem;
@@ -126,12 +127,12 @@
 				}
 			}
 			&.btn-cyan {
-				background-color: var(--accent-color);
-				border-color: var(--accent-color);
-				color: var(--accent-color);
+				background-color: var(--cyan-color);
+				border-color: var(--cyan-color);
+				color: var(--cyan-color);
 				&:hover, &:focus {
-					box-shadow: 0 0 5px 2px var(--accent-color);
-					text-shadow: 0 0 2px var(--accent-color);
+					box-shadow: 0 0 5px 2px var(--cyan-color);
+					text-shadow: 0 0 2px var(--cyan-color);
 					outline: none;
 				}
 			}

@@ -7,14 +7,16 @@
     --border-color-light: #666;
     --border-color-lighter: #999;
     --border-color-lightest: #ccc;
-    --accent-color: #22d3ee;
+    --red-color: #f87171;
+    --green-color: #4ade80;
+    --cyan-color: #22d3ee;
 }
 
 ::selection {
-    background: var(--accent-color);
+    background: var(--red-color);
     color: var(--text-color);
 }
 
 a {
-    color: var(--accent-color);
+    color: var(--red-color);
 }

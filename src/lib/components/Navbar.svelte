@@ -67,7 +67,7 @@
                     transition: 0.2s;
                     padding: 12px;
 					&:hover, &.active {
-						color: var(--accent-color);
+						color: var(--cyan-color);
 					}
 				}
 			}
