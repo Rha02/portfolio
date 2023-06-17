@@ -27,11 +27,20 @@
 				</div>
 			</div>
 			<div class="profile-buttons">
-				<button>
-					<FileIcon width={16} height={16} stroke="#ffffff" />Resume
+				<button class="btn-red btn-outline">
+					<FileIcon width={16} height={16} stroke="#f87171" />Resume
 				</button>
-				<button><GithubIcon width={16} height={16} fill="#ffffff" stroke="#ffffff" />GitHub</button>
-				<button><LinkedinIcon width={16} height={16} fill="#ffffff" stroke="#ffffff" />LinkedIn</button>
+				<button class="btn-green btn-outline">
+					<GithubIcon width={16} height={16} fill="#4ade80" stroke="#4ade80" />GitHub
+				</button>
+				<button class="btn-cyan btn-outline">
+					<LinkedinIcon
+						width={16}
+						height={16}
+						fill="var(--accent-color)"
+						stroke="var(--accent-color)"
+					/>LinkedIn
+				</button>
 			</div>
 		</div>
 	</div>
@@ -87,7 +96,6 @@
 			padding: 0.5rem 1rem;
 			border: none;
 			border-radius: 5px;
-			background-color: var(--accent-color);
 			color: #fff;
 			font-size: 1rem;
 			font-weight: 500;
@@ -96,8 +104,39 @@
 			display: flex;
 			align-items: center;
 			gap: 0.2rem;
-			&:hover {
-				background-color: var(--accent-color-dark);
+			border: 1px solid;
+			&.btn-red {
+				background-color: #f87171;
+				border-color: #f87171;
+				color: #f87171;
+				&:hover, &:focus {
+					box-shadow: 0 0 5px 2px #f87171;
+					text-shadow: 0 0 2px #f87171;
+					outline: none;
+				}
+			}
+			&.btn-green {
+				background-color: #4ade80;
+				border-color: #4ade80;
+				color: #4ade80;
+				&:hover, &:focus {
+					box-shadow: 0 0 5px 2px #4ade80;
+					text-shadow: 0 0 2px #4ade80;
+					outline: none;
+				}
+			}
+			&.btn-cyan {
+				background-color: var(--accent-color);
+				border-color: var(--accent-color);
+				color: var(--accent-color);
+				&:hover, &:focus {
+					box-shadow: 0 0 5px 2px var(--accent-color);
+					text-shadow: 0 0 2px var(--accent-color);
+					outline: none;
+				}
+			}
+			&.btn-outline {
+				background-color: transparent;
 			}
 		}
 	}
