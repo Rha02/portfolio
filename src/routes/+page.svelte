@@ -1,7 +1,7 @@
 <script lang="ts">
-	import fileIcon from '$assets/file.svg';
-	import githubIcon from '$assets/github.svg';
-	import linkedinIcon from '$assets/linkedin.svg';
+	import FileIcon from '$lib/icons/File.svelte';
+	import GithubIcon from '$lib/icons/Github.svelte';
+	import LinkedinIcon from '$lib/icons/Linkedin.svelte';
 </script>
 
 <div class="content">
@@ -28,10 +28,10 @@
 			</div>
 			<div class="profile-buttons">
 				<button>
-					<span><img src={fileIcon} alt="" width="16" /></span>Resume
+					<FileIcon width={16} height={16} stroke="#ffffff" />Resume
 				</button>
-				<button><img src={githubIcon} alt="" width="16" />GitHub</button>
-				<button><img src={linkedinIcon} alt="" width="16" />LinkedIn</button>
+				<button><GithubIcon width={16} height={16} fill="#ffffff" stroke="#ffffff" />GitHub</button>
+				<button><LinkedinIcon width={16} height={16} fill="#ffffff" stroke="#ffffff" />LinkedIn</button>
 			</div>
 		</div>
 	</div>
@@ -93,6 +93,9 @@
 			font-weight: 500;
 			cursor: pointer;
 			transition: 0.2s;
+			display: flex;
+			align-items: center;
+			gap: 0.2rem;
 			&:hover {
 				background-color: var(--accent-color-dark);
 			}
