@@ -7,7 +7,7 @@
 
 <div class="content">
 	<div class="profile">
-		<img src="" alt="" width="400" height="500" />
+		<img src="" alt="" width="350" height="450" />
 		<div class="profile-content">
 			<div>
 				<div class="profile-heading">
@@ -56,23 +56,45 @@
 	}
 	.profile {
 		display: flex;
-		margin: 2rem 0 0 0;
+		flex-direction: column;
+		align-items: center;
+		@include breakpoint.up('lg') {
+			flex-direction: row;
+		}
+		margin: 2rem;
 		.profile-content {
-			margin: 2rem 0 0 2rem;
-			max-width: 600px;
+			margin: 1rem 0 0 0rem;
+			@include breakpoint.up('lg') {
+				margin: 1rem 0 0 2rem;
+			}
+			max-width: 550px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			padding: 0 0 1rem 0;
 			.profile-heading {
 				h6 {
-					font-size: 1.5rem;
+					font-size: 1.4rem;
+					text-align: center;
+					@include breakpoint.up('lg') {
+						text-align: left;
+					}
+					@include breakpoint.up('xl') {
+						font-size: 1.5rem;
+					}
 					font-weight: 400;
 					margin: 0 0 0.5rem 0;
 					color: var(--text-color-light);
 				}
 				h1 {
-					font-size: 2.5rem;
+					font-size: 2rem;
+					text-align: center;
+					@include breakpoint.up('lg') {
+						text-align: left;
+					}
+					@include breakpoint.up('xl') {
+						font-size: 2.2rem;
+					}
 					font-weight: 700;
 					color: #fff;
 					margin: 0 0 0.5rem 0;
@@ -80,9 +102,16 @@
 			}
 			.profile-description {
 				p {
-					font-size: 1.2rem;
+					font-size: 1.1rem;
+					text-align: center;
 					font-weight: 400;
 					color: var(--text-color-lighter);
+					@include breakpoint.up('lg') {
+						text-align: left;
+					}
+					@include breakpoint.up('xl') {
+						font-size: 1.2rem;
+					}
 				}
 			}
 		}
@@ -90,8 +119,11 @@
 	.profile-buttons {
 		display: flex;
 		flex-direction: row;
-		justify-content: flex-start;
+		justify-content: center;
 		gap: 1rem;
-		margin: 2rem 0 0 0;
+		margin: 1rem 0 0 0;
+		@include breakpoint.up('lg') {
+			justify-content: flex-start;
+		}
 	}
 </style>

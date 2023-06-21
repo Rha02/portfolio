@@ -28,9 +28,5 @@
         header {
             min-height: 5rem;
         }
-
-        main {
-            height: 100vh;
-        }
 	}
 </style>
