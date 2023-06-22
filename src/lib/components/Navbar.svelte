@@ -175,11 +175,16 @@
 			background-color: var(--bg-color);
 			box-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
 			li {
-				padding: 0.5rem 1rem;
+				width: 100%;
+				transition: 0.1s;
 				&:hover {
 					background-color: rgba(0, 0, 0, 0.1);
 				}
 				a {
+					display: inline-block;
+					padding: 0.5rem 1rem;
+					height: 100%;
+					width: 100%;
 					color: var(--text-color);
 					text-decoration: none;
 					transition: 0.2s;

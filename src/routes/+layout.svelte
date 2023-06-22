@@ -11,9 +11,7 @@
     <main>
         <slot></slot>
     </main>
-    <footer>
-        <p>Footer</p>
-    </footer>
+    <footer></footer>
 </div>
 
 <style lang="scss">
@@ -24,7 +22,7 @@
         min-height: 100vh;
         background-color: var(--bg-color);
         color: var(--text-color);
-
+        padding-bottom: 4rem;
         header {
             min-height: 5rem;
         }
