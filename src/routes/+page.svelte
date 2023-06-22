@@ -31,10 +31,22 @@
 				<Button element="a" href="/" target="_blank" variant="outline" color="red">
 					<FileIcon width={16} height={16} stroke="#f87171" />Resume
 				</Button>
-				<Button element="a" href="https://github.com/Rha02" target="_blank" variant="outline" color="green">
+				<Button
+					element="a"
+					href="https://github.com/Rha02"
+					target="_blank"
+					variant="outline"
+					color="green"
+				>
 					<GithubIcon width={16} height={16} fill="#4ade80" stroke="#4ade80" />GitHub
 				</Button>
-				<Button element="a" href="https://www.linkedin.com/in/romuz-abdulhamidov/" target="_blank" variant="outline" color="cyan">
+				<Button
+					element="a"
+					href="https://www.linkedin.com/in/romuz-abdulhamidov/"
+					target="_blank"
+					variant="outline"
+					color="cyan"
+				>
 					<LinkedinIcon
 						width={16}
 						height={16}
@@ -42,6 +54,76 @@
 						stroke="var(--cyan-color)"
 					/>LinkedIn
 				</Button>
+			</div>
+		</div>
+	</div>
+	<div class="skills">
+		<h2>Skills</h2>
+		<div class="skills-cards">
+			<div class="card">
+				<h3 class="card-header red">Databases</h3>
+				<div class="card-body">
+					<ul>
+						<li>PostgresSQL</li>
+						<li>MySQL</li>
+						<li>MongoDB</li>
+						<li>Redis</li>
+						<li>SQL</li>
+					</ul>
+				</div>
+			</div>
+			<div class="card">
+				<h3 class="card-header amber">Languages</h3>
+				<div class="card-body">
+					<ul>
+						<li>Go</li>
+						<li>TypeScript</li>
+						<li>Python</li>
+						<li>JavaScript</li>
+						<li>Java</li>
+						<li>PHP</li>
+					</ul>
+				</div>
+			</div>
+			<div class="card">
+				<h3 class="card-header green">Backend</h3>
+				<div class="card-body">
+					<ul>
+						<li>Go</li>
+						<li>Node.js</li>
+						<li>Express.js</li>
+						<li>Laravel</li>
+						<li>Django</li>
+						<li>Flask</li>
+						<li>PHP</li>
+					</ul>
+				</div>
+			</div>
+			<div class="card">
+				<h3 class="card-header cyan">Frontend</h3>
+				<div class="card-body">
+					<ul>
+						<li>Svelte</li>
+						<li>React.js</li>
+						<li>Vue.js</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>SCSS</li>
+					</ul>
+				</div>
+			</div>
+			<div class="card">
+				<h3 class="card-header indigo">Others</h3>
+				<div class="card-body">
+					<ul>
+						<li>Azure</li>
+						<li>AWS</li>
+						<li>Docker</li>
+						<li>Postman</li>
+						<li>CI/CD</li>
+						<li>Git</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -115,15 +197,77 @@
 				}
 			}
 		}
+		.profile-buttons {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			gap: 1rem;
+			margin: 1rem 0 0 0;
+			@include breakpoint.up('lg') {
+				justify-content: flex-start;
+			}
+		}
 	}
-	.profile-buttons {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		gap: 1rem;
-		margin: 1rem 0 0 0;
-		@include breakpoint.up('lg') {
-			justify-content: flex-start;
+	.skills {
+		text-align: center;
+		h2 {
+			font-size: 2rem;
+			font-weight: 700;
+			color: #fff;
+			margin: 4rem 0 0 0;
+		}
+		.skills-cards {
+			.card {
+				width: 24rem;
+				margin: 1rem 0 0 0;
+				.card-header {
+					font-size: 1.5rem;
+					font-weight: 700;
+					color: #fff;
+					padding: 1rem;
+					margin: 0;
+					&.red {
+						border-bottom: 2px solid var(--red-color);
+						background-image: linear-gradient(0deg, rgb(248, 113, 113, 0.6), transparent 65%);
+					}
+					&.amber {
+						border-bottom: 2px solid var(--amber-color);
+						background-image: linear-gradient(0deg, rgb(252, 211, 77, 0.6), transparent 65%);
+					}
+					&.green {
+						border-bottom: 2px solid var(--green-color);
+						background-image: linear-gradient(0deg, rgb(74, 222, 128, 0.6), transparent 65%);
+					}
+					&.cyan {
+						border-bottom: 2px solid var(--cyan-color);
+						background-image: linear-gradient(0deg, rgb(34, 211, 238, 0.6), transparent 65%);
+					}
+					&.indigo {
+						border-bottom: 2px solid var(--indigo-color);
+						background-image: linear-gradient(0deg, rgb(129, 140, 248, 0.6), transparent 65%);
+					}
+				}
+				.card-body {
+					text-align: left;
+					border: 1px solid var(--border-color);
+					border-bottom-left-radius: 1rem;
+					border-bottom-right-radius: 1rem;
+					ul {
+						list-style: none;
+						margin: 1rem 0 1rem 0;
+						padding: 0 1rem 0 1.5rem;
+						li {
+							font-size: 1.2rem;
+							font-weight: 400;
+							color: var(--text-color-light);
+							margin: 0 0 0.5rem 0;
+							&:last-child {
+								margin: 0;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 </style>
