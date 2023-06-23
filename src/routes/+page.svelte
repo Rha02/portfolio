@@ -60,7 +60,7 @@
 	<div class="skills">
 		<h2>Technical Skills</h2>
 		<div class="skills-cards">
-			<div class="card">
+			<div class="card card-a">
 				<h3 class="card-header red">Databases</h3>
 				<div class="card-body">
 					<ul>
@@ -72,7 +72,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card card-b">
 				<h3 class="card-header amber">Languages</h3>
 				<div class="card-body">
 					<ul>
@@ -85,7 +85,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card card-c">
 				<h3 class="card-header green">Backend</h3>
 				<div class="card-body">
 					<ul>
@@ -99,7 +99,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card card-d">
 				<h3 class="card-header cyan">Frontend</h3>
 				<div class="card-body">
 					<ul>
@@ -112,7 +112,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card card-e">
 				<h3 class="card-header indigo">Others</h3>
 				<div class="card-body">
 					<ul>
@@ -210,6 +210,10 @@
 	}
 	.skills {
 		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		h2 {
 			font-size: 2rem;
 			font-weight: 700;
@@ -217,9 +221,58 @@
 			margin: 4rem 0 0 0;
 		}
 		.skills-cards {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-areas: 'a' 'b' 'c' 'd' 'e';
+			@include breakpoint.down('md') {
+				width: 100%;
+			}
+			@include breakpoint.up('lg') {
+				gap: 1rem;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-areas:
+					'a a b b'
+					'a a b b'
+					'c c d d'
+					'c c d d'
+					'. e e .';
+			}
+			@include breakpoint.up('xl') {
+				grid-template-columns: repeat(6, 1fr);
+				grid-template-areas:
+					'a a b b c c'
+					'. d d e e .';
+			}
 			.card {
-				width: 24rem;
+				width: 90%;
+				max-width: 24rem;
 				margin: 1rem 0 0 0;
+				display: flex;
+				flex-direction: column;
+				justify-self: center;
+				@include breakpoint.up('lg') {
+					width: 24rem;
+				}
+				@include breakpoint.up('xl') {
+					width: 100%;
+					min-width: 20rem;
+					max-width: 24rem;
+				}
+				&-a {
+					grid-area: a;
+				}
+				&-b {
+					grid-area: b;
+				}
+				&-c {
+					grid-area: c;
+				}
+				&-d {
+					grid-area: d;
+				}
+				&-e {
+					grid-area: e;
+				}
 				.card-header {
 					font-size: 1.5rem;
 					font-weight: 700;
@@ -252,6 +305,7 @@
 					border: 1px solid var(--border-color);
 					border-bottom-left-radius: 1rem;
 					border-bottom-right-radius: 1rem;
+					flex: auto;
 					ul {
 						list-style: none;
 						margin: 1rem 0 1rem 0;
