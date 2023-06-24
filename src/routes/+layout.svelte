@@ -2,6 +2,21 @@
 	import 'modern-normalize/modern-normalize.css';
     import '../styles/main.scss'
 	import Navbar from '$components/Navbar.svelte';
+    import NProgress from 'nprogress';
+    import "nprogress/nprogress.css";
+	import { afterNavigate, beforeNavigate } from '$app/navigation';
+
+    NProgress.configure({ showSpinner: false });
+
+    afterNavigate(() => {
+        console.log('afterNavigate');
+        NProgress.done();
+    })
+
+    beforeNavigate(() => {
+        console.log('beforeNavigate');
+        NProgress.start();
+    });
 </script>
 
 <div class="main">

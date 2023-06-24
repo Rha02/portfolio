@@ -22,3 +22,7 @@
 a {
     color: var(--red-color);
 }
+
+#nprogress .bar {
+    background-color: var(--cyan-color) !important;
+}
