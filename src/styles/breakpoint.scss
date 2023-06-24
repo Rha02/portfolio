@@ -1,5 +1,5 @@
 $xs: 0px;
-$sm: 576px;
+$sm: 526px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
@@ -24,16 +24,16 @@ $xl: 1200px;
 
 @mixin down($breakpoint) {
     @if $breakpoint == "xs" {
-        @media (max-width: $sm - 1) { @content; }
+        @media (max-width: ($sm - 1)) { @content; }
     }
     @else if $breakpoint == "sm" {
-        @media (max-width: $md - 1) { @content; }
+        @media (max-width: ($md - 1)) { @content; }
     }
     @else if $breakpoint == "md" {
-        @media (max-width: $lg - 1) { @content; }
+        @media (max-width: ($lg - 1)) { @content; }
     }
     @else if $breakpoint == "lg" {
-        @media (max-width: $xl - 1) { @content; }
+        @media (max-width: ($xl - 1)) { @content; }
     }
     @else if $breakpoint == "xl" {
         @media (max-width: $xl) { @content; }

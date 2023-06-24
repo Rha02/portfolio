@@ -7,7 +7,7 @@
 
 <div class="content">
 	<div class="profile">
-		<img src="" alt="" width="350" height="450" />
+		<img src="" alt="" />
 		<div class="profile-content">
 			<div>
 				<div class="profile-heading">
@@ -144,11 +144,20 @@
 			flex-direction: row;
 		}
 		margin: 2rem;
+		img {
+			width: 301px;
+			height: 387px;
+			@include breakpoint.up('sm') {
+				width: 350px;
+				height: 450px;
+			}
+		}
 		.profile-content {
 			margin: 1rem 0 0 0rem;
 			@include breakpoint.up('lg') {
 				margin: 1rem 0 0 2rem;
 			}
+			min-width: 300px;
 			max-width: 550px;
 			display: flex;
 			flex-direction: column;
@@ -156,21 +165,27 @@
 			padding: 0 0 1rem 0;
 			.profile-heading {
 				h6 {
-					font-size: 1.4rem;
+					font-size: 1.1rem;
 					text-align: center;
+					font-weight: 400;
+					margin: 0 0 0.5rem 0;
+					color: var(--text-color-light);
+					@include breakpoint.up('sm') {
+						font-size: 1.4rem;
+					}
 					@include breakpoint.up('lg') {
 						text-align: left;
 					}
 					@include breakpoint.up('xl') {
 						font-size: 1.5rem;
 					}
-					font-weight: 400;
-					margin: 0 0 0.5rem 0;
-					color: var(--text-color-light);
 				}
 				h1 {
-					font-size: 2rem;
+					font-size: 1.6rem;
 					text-align: center;
+					@include breakpoint.up('md') {
+						font-size: 2rem;
+					}
 					@include breakpoint.up('lg') {
 						text-align: left;
 					}
@@ -184,12 +199,16 @@
 			}
 			.profile-description {
 				p {
-					font-size: 1.1rem;
+					font-size: 1rem;
 					text-align: center;
 					font-weight: 400;
 					color: var(--text-color-lighter);
+					@include breakpoint.up('sm') {
+						font-size: 1.1rem;
+					}
 					@include breakpoint.up('lg') {
 						text-align: left;
+						font-size: 1.1rem;
 					}
 					@include breakpoint.up('xl') {
 						font-size: 1.2rem;
@@ -201,8 +220,13 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
-			gap: 1rem;
+			gap: 0.5rem;
 			margin: 1rem 0 0 0;
+			font-size: 11px;
+			@include breakpoint.up('sm') {
+				gap: 1rem;
+				font-size: 1rem;
+			}
 			@include breakpoint.up('lg') {
 				justify-content: flex-start;
 			}
@@ -215,7 +239,7 @@
 		flex-direction: column;
 		align-items: center;
 		h2 {
-			font-size: 2rem;
+			font-size: 1.8rem;
 			font-weight: 700;
 			color: #fff;
 			margin: 4rem 0 0 0;
