@@ -9,12 +9,10 @@
     NProgress.configure({ showSpinner: false });
 
     afterNavigate(() => {
-        console.log('afterNavigate');
         NProgress.done();
     })
 
     beforeNavigate(() => {
-        console.log('beforeNavigate');
         NProgress.start();
     });
 </script>

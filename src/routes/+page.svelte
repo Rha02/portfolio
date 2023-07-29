@@ -7,7 +7,7 @@
 
 <div class="content">
 	<div class="profile">
-		<img src="" alt="" />
+		<img src="/romuz_photo.png" alt="" />
 		<div class="profile-content">
 			<div>
 				<div class="profile-heading">
@@ -57,6 +57,27 @@
 			</div>
 		</div>
 	</div>
+	<div class="education">
+		<h2>Education</h2>
+		<div class="education-section">
+			<img src="" alt="" />
+			<div class="education-text">
+				<h3>San Jose State University</h3>
+				<h4>Bachelor of Science in Software Engineering</h4>
+				<h5>August 2021 - December 2024</h5>
+				<h5>Currently Attending</h5>
+			</div>
+		</div>
+	</div>
+	<div class="experience">
+		<h2>Experience</h2>
+		<div class="experience-section">
+			<h3>Work Experience</h3>
+			<div class="work-experience" />
+			<h3>Projects</h3>
+			<div class="projects-experience" />
+		</div>
+	</div>
 	<div class="skills">
 		<h2>Technical Skills</h2>
 		<div class="skills-cards">
@@ -73,7 +94,7 @@
 				</div>
 			</div>
 			<div class="card card-b">
-				<h3 class="card-header amber">Languages</h3>
+				<h3 class="card-header green">Languages</h3>
 				<div class="card-body">
 					<ul>
 						<li>Go</li>
@@ -86,7 +107,7 @@
 				</div>
 			</div>
 			<div class="card card-c">
-				<h3 class="card-header green">Backend</h3>
+				<h3 class="card-header cyan">Backend</h3>
 				<div class="card-body">
 					<ul>
 						<li>Go</li>
@@ -100,7 +121,7 @@
 				</div>
 			</div>
 			<div class="card card-d">
-				<h3 class="card-header cyan">Frontend</h3>
+				<h3 class="card-header red">Frontend</h3>
 				<div class="card-body">
 					<ul>
 						<li>Svelte</li>
@@ -113,7 +134,7 @@
 				</div>
 			</div>
 			<div class="card card-e">
-				<h3 class="card-header indigo">Others</h3>
+				<h3 class="card-header green">Others</h3>
 				<div class="card-body">
 					<ul>
 						<li>Azure</li>
@@ -130,6 +151,12 @@
 </div>
 
 <style lang="scss">
+	h2 {
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: #fff;
+		margin: 4rem 0 0 0;
+	}
 	.content {
 		display: flex;
 		flex-direction: column;
@@ -147,6 +174,7 @@
 		img {
 			width: 301px;
 			height: 387px;
+			border-radius: 15px;
 			@include breakpoint.up('sm') {
 				width: 350px;
 				height: 450px;
@@ -238,12 +266,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		h2 {
-			font-size: 1.8rem;
-			font-weight: 700;
-			color: #fff;
-			margin: 4rem 0 0 0;
-		}
 		.skills-cards {
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
@@ -307,10 +329,6 @@
 						border-bottom: 2px solid var(--red-color);
 						background-image: linear-gradient(0deg, rgb(248, 113, 113, 0.6), transparent 65%);
 					}
-					&.amber {
-						border-bottom: 2px solid var(--amber-color);
-						background-image: linear-gradient(0deg, rgb(252, 211, 77, 0.6), transparent 65%);
-					}
 					&.green {
 						border-bottom: 2px solid var(--green-color);
 						background-image: linear-gradient(0deg, rgb(74, 222, 128, 0.6), transparent 65%);
@@ -318,10 +336,6 @@
 					&.cyan {
 						border-bottom: 2px solid var(--cyan-color);
 						background-image: linear-gradient(0deg, rgb(34, 211, 238, 0.6), transparent 65%);
-					}
-					&.indigo {
-						border-bottom: 2px solid var(--indigo-color);
-						background-image: linear-gradient(0deg, rgb(129, 140, 248, 0.6), transparent 65%);
 					}
 				}
 				.card-body {
@@ -347,5 +361,31 @@
 				}
 			}
 		}
+	}
+	.education {
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.education-section {
+			margin: 2rem 0 0 0;
+			display: flex;
+			gap: 1rem;
+			img {
+				width: 200px;
+				height: 200px;
+			}
+			.education-text {
+				text-align: start;
+			}
+		}
+	}
+	.experience {
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 </style>

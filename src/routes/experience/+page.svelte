@@ -3,9 +3,40 @@
     <div class="work">
         Coming soon...
     </div>
-    <h1>Projects</h1>
+    <h1>Personal Projects</h1>
     <div class="projects">
-        Coming soon...
+        <div class="project">
+            <div class="header">
+                <h2>Project 1</h2>
+            </div>
+            <div class="body">
+                <p>Coming soon...</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="header">
+                <h2>Project 1</h2>
+            </div>
+            <div class="body">
+                <p>Coming soon...</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="header">
+                <h2>Project 1</h2>
+            </div>
+            <div class="body">
+                <p>Coming soon...</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="header">
+                <h2>Project 1</h2>
+            </div>
+            <div class="body">
+                <p>Coming soon...</p>
+            </div>
+        </div>
     </div>
 </div>
 
