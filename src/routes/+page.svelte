@@ -60,7 +60,7 @@
 	<div class="education">
 		<h2>Education</h2>
 		<div class="education-section">
-			<img src="" alt="" />
+			<img src="/sjsu.jpg" alt="" />
 			<div class="education-text">
 				<h3>San Jose State University</h3>
 				<h4>Bachelor of Science in Software Engineering</h4>
@@ -369,15 +369,47 @@
 		flex-direction: column;
 		align-items: center;
 		.education-section {
-			margin: 2rem 0 0 0;
+			margin: 2rem 1rem 0 2rem;
 			display: flex;
+			flex-direction: column;
+			align-items: center;
 			gap: 1rem;
+			@include breakpoint.up('sm') {
+				flex-direction: row;
+				gap: 2rem;
+			}
 			img {
-				width: 200px;
-				height: 200px;
+				width: 150px;
+				height: 150px;
+				@include breakpoint.up('md') {
+					width: 200px;
+					height: 200px;
+				}
+				border-radius: 15px;
 			}
 			.education-text {
-				text-align: start;
+				text-align: center;
+				@include breakpoint.up('sm') {
+					text-align: start;
+				}
+				h3 {
+					font-size: 18px;
+					@include breakpoint.up('md') {
+						font-size: 1.5rem;
+					}
+				}
+				h4 {
+					font-size: 13px;
+					@include breakpoint.up('md') {
+						font-size: 1rem;
+					}
+				}
+				h5 {
+					font-size: 12px;
+					@include breakpoint.up('md') {
+						font-size: 0.9rem;
+					}
+				}
 			}
 		}
 	}
