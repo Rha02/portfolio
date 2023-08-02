@@ -60,7 +60,9 @@
 	<div class="education">
 		<h2>Education</h2>
 		<div class="education-section">
-			<img src="/sjsu.jpg" alt="" />
+			<div class="education-image">
+				<img src="/sjsu.jpg" alt="" />
+			</div>
 			<div class="education-text">
 				<h3>San Jose State University</h3>
 				<h4>Bachelor of Science in Software Engineering</h4>
@@ -70,12 +72,17 @@
 		</div>
 	</div>
 	<div class="experience">
-		<h2>Experience</h2>
-		<div class="experience-section">
-			<h3>Work Experience</h3>
-			<div class="work-experience" />
-			<h3>Projects</h3>
-			<div class="projects-experience" />
+		<h2>Work Experience</h2>
+		<div class="work-experience">
+			<div class="work-logo">
+				<img src="/koch.png" alt="" />
+			</div>
+			<div class="work-text">
+				<h3>Koch Industries</h3>
+				<h4>Data Engineer Intern</h4>
+				<h5>May 2023 - August 2023</h5>
+				<h5>Currently Working Here</h5>
+			</div>
 		</div>
 	</div>
 	<div class="skills">
@@ -373,24 +380,37 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			justify-content: center;
+			width: 100%;
 			gap: 1rem;
 			@include breakpoint.up('sm') {
 				flex-direction: row;
-				gap: 2rem;
+				gap: 1.2rem;
 			}
-			img {
-				width: 150px;
-				height: 150px;
-				@include breakpoint.up('md') {
-					width: 200px;
-					height: 200px;
+			.education-image {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				@include breakpoint.up('sm') {
+					align-items: end;
+					width: 50%;
 				}
-				border-radius: 15px;
+				img {
+					width: 150px;
+					height: 150px;
+					@include breakpoint.up('md') {
+						width: 200px;
+						height: 200px;
+					}
+					border-radius: 15px;
+				}
 			}
 			.education-text {
 				text-align: center;
 				@include breakpoint.up('sm') {
 					text-align: start;
+					width: 50%;
+					padding-right: 1rem;
 				}
 				h3 {
 					font-size: 18px;
@@ -419,5 +439,62 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		.work-experience {
+			margin: 2rem 1rem 0 2rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			gap: 1rem;
+			@include breakpoint.up('sm') {
+				flex-direction: row;
+				gap: 2rem;
+			}
+			.work-logo {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				@include breakpoint.up('sm') {
+					align-items: end;
+					width: 50%;
+				}
+				img {
+					width: 150px;
+					height: 150px;
+					border-radius: 15px;
+					@include breakpoint.up('md') {
+						width: 200px;
+						height: 200px;
+					}
+				}
+			}
+			.work-text {
+				text-align: center;
+				@include breakpoint.up('sm') {
+					text-align: start;
+					width: 50%;
+					padding-right: 1rem;
+				}
+				h3 {
+					font-size: 18px;
+					@include breakpoint.up('md') {
+						font-size: 1.5rem;
+					}
+				}
+				h4 {
+					font-size: 13px;
+					@include breakpoint.up('md') {
+						font-size: 1rem;
+					}
+				}
+				h5 {
+					font-size: 12px;
+					@include breakpoint.up('md') {
+						font-size: 0.9rem;
+					}
+				}
+			}
+		}
 	}
 </style>
