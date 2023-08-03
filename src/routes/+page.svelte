@@ -17,18 +17,18 @@
 				</div>
 				<div class="profile-description">
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, possimus atque! Nisi,
-						libero. Neque esse deserunt aliquam a est quae natus, ullam vitae quidem molestiae
-						doloribus assumenda, dolore fuga harum! Lorem ipsum dolor sit amet consectetur
-						adipisicing elit. Nam, laboriosam rerum omnis numquam assumenda quia velit magnam
-						tempore deleniti rem magni explicabo pariatur sapiente. Minima est sed consequatur ad
-						autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatibus
-						doloribus veritatis beatae aperiam vero expedita placeat nostrum eligendi maxime!
+						I am a college student pursuing a career in full-stack software development. I have
+						experience building web applications using a variety of languages and frameworks. I have
+						previously built a multitude of personal and collaborative projects. I am currently
+						studying at San Jose State University and working as a Data Engineering Intern at Koch.
+						I put a lot of effort into developing my skillset and learning new technologies that
+						will help me build a strong foundation for a successful career. Feel free to reach out to
+						me!
 					</p>
 				</div>
 			</div>
 			<div class="profile-buttons">
-				<Button element="a" href="/" target="_blank" variant="outline" color="red">
+				<Button element="a" href="https://drive.google.com/file/d/1PvI9b8N9Bjc9AksoAE2HxKYmC1Hzpanv/view" target="_blank" variant="outline" color="red">
 					<FileIcon width={16} height={16} stroke="#f87171" />Resume
 				</Button>
 				<Button
