@@ -28,7 +28,7 @@
 				</div>
 			</div>
 			<div class="profile-buttons">
-				<Button element="a" href="https://drive.google.com/file/d/1a1dIah9TOhgqIQ-5cGuLvKzJCS-IdHMi/view" target="_blank" variant="outline" color="red">
+				<Button element="a" href="https://drive.google.com/file/d/1ODCfFkrye_ROFSpYZ93DnslfmzgzAcm3/view" target="_blank" variant="outline" color="red">
 					<FileIcon width={16} height={16} stroke="#f87171" />Resume
 				</Button>
 				<Button
