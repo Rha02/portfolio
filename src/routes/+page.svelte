@@ -19,8 +19,8 @@
 					<p>
 						I am a college student pursuing a career in full-stack software development. I have
 						experience building web applications using a variety of languages and frameworks. I have
-						previously built a multitude of personal and collaborative projects. I am currently
-						studying at San Jose State University and working as a Data Engineering Intern at Koch.
+						built a multitude of personal and collaborative projects. I am currently studying
+						at San Jose State University. I am previously worked as a Data Engineering Intern at Koch.
 						I put a lot of effort into developing my skillset and learning new technologies that
 						will help me build a strong foundation for a successful career. Feel free to reach out to
 						me!
@@ -28,7 +28,7 @@
 				</div>
 			</div>
 			<div class="profile-buttons">
-				<Button element="a" href="https://drive.google.com/file/d/1UlbLhIc7Zke_VBagf7iqrMSIW11LvAr9/view?usp=sharing" target="_blank" variant="outline" color="red">
+				<Button element="a" href="https://drive.google.com/file/d/1yaQPURt1-27xRiQIHUXTsVO_aGjxeXJ-/view?usp=sharing" target="_blank" variant="outline" color="red">
 					<FileIcon width={16} height={16} stroke="#f87171" />Resume
 				</Button>
 				<Button
@@ -80,8 +80,7 @@
 			<div class="work-text">
 				<h3>Koch Industries</h3>
 				<h4>Data Engineer Intern</h4>
-				<h5>May 2023 - August 2023</h5>
-				<h5>Currently Working Here</h5>
+				<h5>May 2023 - May 2024</h5>
 			</div>
 		</div>
 	</div>
@@ -118,6 +117,7 @@
 				<div class="card-body">
 					<ul>
 						<li>Go</li>
+						<li>FastAPI</li>
 						<li>Node.js</li>
 						<li>Express.js</li>
 						<li>Laravel</li>
@@ -150,6 +150,7 @@
 						<li>Postman</li>
 						<li>CI/CD</li>
 						<li>Git</li>
+						<li>Snowflake</li>
 					</ul>
 				</div>
 			</div>
