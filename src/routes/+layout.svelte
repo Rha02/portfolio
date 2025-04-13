@@ -5,6 +5,11 @@
     import NProgress from 'nprogress';
     import "nprogress/nprogress.css";
 	import { afterNavigate, beforeNavigate } from '$app/navigation';
+    interface Props {
+        children?: import('svelte').Snippet;
+    }
+
+    let { children }: Props = $props();
 
     NProgress.configure({ showSpinner: false });
 
@@ -22,7 +27,7 @@
         <Navbar />
     </header>
     <main>
-        <slot></slot>
+        {@render children?.()}
     </main>
     <footer></footer>
 </div>

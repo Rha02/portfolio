@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import MenuIcon from '$lib/icons/Menu.svelte';
 	import XIcon from '$lib/icons/X.svelte';
 
@@ -23,7 +23,7 @@
 		}
 	];
 
-	let isMenuOpen = false;
+	let isMenuOpen = $state(false);
 
 	const openMenu = () => {
 		isMenuOpen = true;
@@ -40,7 +40,7 @@
 		<ul class="nav-links">
 			{#each navItems as item}
 				<li>
-					<a href={item.href} class:active={item.href == $page.url.pathname}>
+					<a href={item.href} class:active={item.href == page.url.pathname}>
 						{item.name}
 					</a>
 				</li>
@@ -48,11 +48,11 @@
 		</ul>
 		<div class="nav-links-mobile">
 			{#if isMenuOpen}
-				<button class="menu-button" on:click={closeMenu}>
+				<button class="menu-button" onclick={closeMenu}>
 					<XIcon stroke="white" width={32} height={32} />
 				</button>
 			{:else}
-				<button class="menu-button" on:click={openMenu}>
+				<button class="menu-button" onclick={openMenu}>
 					<MenuIcon stroke="white" width={32} height={32} />
 				</button>
 			{/if}
@@ -63,7 +63,7 @@
 			<ul>
 				{#each navItems as item}
 					<li>
-						<a href={item.href} class:active={item.href == $page.url.pathname}>
+						<a href={item.href} class:active={item.href == page.url.pathname}>
 							{item.name}
 						</a>
 					</li>

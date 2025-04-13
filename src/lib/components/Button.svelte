@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { createBubbler } from 'svelte/legacy';
+
+	const bubble = createBubbler();
 	import type { HTMLAnchorAttributes, HTMLButtonAttributes } from 'svelte/elements';
 
 	// Generic type of button element
@@ -19,19 +22,32 @@
 	};
 
 	// Props
-	export let element: Element;
-	export let variant: 'solid' | 'outline' | 'text' = 'solid';
-	export let color: 'red' | 'green' | 'cyan' = 'cyan';
-	export let className: string = '';
+	interface Props {
+		element: Element;
+		variant?: 'solid' | 'outline' | 'text';
+		color?: 'red' | 'green' | 'cyan';
+		className?: string;
+		children?: import('svelte').Snippet;
+		[key: string]: any
+	}
+
+	let {
+		element,
+		variant = 'solid',
+		color = 'cyan',
+		className = '',
+		children,
+		...rest
+	}: Props = $props();
 </script>
 
 <svelte:element
 	this={element}
 	class="btn btn-{variant} btn-{color} {className}"
-	on:click
-	{...$$restProps}
+	onclick={bubble('click')}
+	{...rest}
 >
-	<slot />
+	{@render children?.()}
 </svelte:element>
 
 <style lang="scss">

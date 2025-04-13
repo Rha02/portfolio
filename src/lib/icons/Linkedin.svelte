@@ -1,8 +1,17 @@
 <script lang="ts">
-	export let width = 64;
-	export let height = 64;
-	export let fill = 'none';
-	export let stroke = '#000000';
+	interface Props {
+		width?: number;
+		height?: number;
+		fill?: string;
+		stroke?: string;
+	}
+
+	let {
+		width = 64,
+		height = 64,
+		fill = 'none',
+		stroke = '#000000'
+	}: Props = $props();
 </script>
 
 <svg
