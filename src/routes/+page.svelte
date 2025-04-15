@@ -175,10 +175,10 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin: 2rem;
 		@include breakpoint.up('lg') {
 			flex-direction: row;
 		}
-		margin: 2rem;
 		img {
 			width: 301px;
 			height: 387px;
@@ -190,15 +190,15 @@
 		}
 		.profile-content {
 			margin: 1rem 0 0 0rem;
-			@include breakpoint.up('lg') {
-				margin: 1rem 0 0 2rem;
-			}
 			min-width: 300px;
 			max-width: 550px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			padding: 0 0 1rem 0;
+			@include breakpoint.up('lg') {
+				margin: 1rem 0 0 2rem;
+			}
 			.profile-heading {
 				h6 {
 					font-size: 1.1rem;
@@ -219,6 +219,9 @@
 				h1 {
 					font-size: 1.6rem;
 					text-align: center;
+					font-weight: 700;
+					color: #fff;
+					margin: 0 0 0.5rem 0;
 					@include breakpoint.up('md') {
 						font-size: 2rem;
 					}
@@ -228,9 +231,6 @@
 					@include breakpoint.up('xl') {
 						font-size: 2.2rem;
 					}
-					font-weight: 700;
-					color: #fff;
-					margin: 0 0 0.5rem 0;
 				}
 			}
 			.profile-description {
@@ -399,11 +399,11 @@
 				img {
 					width: 150px;
 					height: 150px;
+					border-radius: 15px;
 					@include breakpoint.up('md') {
 						width: 200px;
 						height: 200px;
 					}
-					border-radius: 15px;
 				}
 			}
 			.education-text {
