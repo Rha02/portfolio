@@ -16,19 +16,33 @@
 					<h6>Full-Stack Software Engineer</h6>
 				</div>
 				<div class="profile-description">
-					<p>
-						I am a college student pursuing a career in full-stack software development. I have
-						experience building web applications using a variety of languages and frameworks. I have
-						built a multitude of personal and collaborative projects. I am currently studying
-						at San Jose State University. I am previously worked as a Data Engineering Intern at Koch.
-						I put a lot of effort into developing my skillset and learning new technologies that
-						will help me build a strong foundation for a successful career. Feel free to reach out to
-						me!
-					</p>
+					<ul>
+						<li>
+							Tech Enthusiast
+						</li>
+						<hr>
+						<li>
+							Building cloud-native web applications at Walmart
+						</li>
+						<hr>
+						<li>
+							1.5 Years of Internship Experience
+						</li>
+						<hr>
+						<li>
+							Trilingual (English, Russian, Tajik)
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div class="profile-buttons">
-				<Button element="a" href="https://drive.google.com/file/d/1yaQPURt1-27xRiQIHUXTsVO_aGjxeXJ-/view?usp=sharing" target="_blank" variant="outline" color="red">
+				<Button
+					element="a"
+					href="https://drive.google.com/file/d/1yaQPURt1-27xRiQIHUXTsVO_aGjxeXJ-/view?usp=sharing"
+					target="_blank"
+					variant="outline"
+					color="red"
+				>
 					<FileIcon width={16} height={16} stroke="#f87171" />Resume
 				</Button>
 				<Button
@@ -180,10 +194,18 @@
 			flex-direction: row;
 		}
 		img {
-			width: 301px;
-			height: 387px;
+			width: 231px;
+			height: 297px;
 			border-radius: 15px;
 			@include breakpoint.up('sm') {
+				width: 280px;
+				height: 360px;
+			}
+			@include breakpoint.up('md') {
+				width: 315px;
+				height: 405px;
+			}
+			@include breakpoint.up('lg') {
 				width: 350px;
 				height: 450px;
 			}
@@ -248,6 +270,37 @@
 					}
 					@include breakpoint.up('xl') {
 						font-size: 1.2rem;
+					}
+				}
+				ul {
+					font-size: 1rem;
+					text-align: center;
+					font-weight: 400;
+					color: var(--text-color-lighter);
+					@include breakpoint.up('sm') {
+						font-size: 1.1rem;
+					}
+					@include breakpoint.up('lg') {
+						text-align: left;
+						font-size: 1.1rem;
+					}
+					@include breakpoint.up('xl') {
+						font-size: 1.2rem;
+					}
+					li {
+						list-style: none;
+						line-height: 1rem;
+						@include breakpoint.up('lg') {
+							list-style: disc;
+							line-height: 2rem;
+						}
+					}
+					hr {
+						opacity: 25%;
+						width: 25%;
+						@include breakpoint.up('lg') {
+							display: none;
+						}
 					}
 				}
 			}
