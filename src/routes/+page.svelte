@@ -17,21 +17,13 @@
 				</div>
 				<div class="profile-description">
 					<ul>
-						<li>
-							Tech Enthusiast
-						</li>
-						<hr>
-						<li>
-							Building cloud-native web applications at Walmart
-						</li>
-						<hr>
-						<li>
-							1.5 Years of Internship Experience
-						</li>
-						<hr>
-						<li>
-							Trilingual (English, Russian, Tajik)
-						</li>
+						<li>Tech Enthusiast</li>
+						<hr />
+						<li>Building cloud-native web applications at Walmart</li>
+						<hr />
+						<li>1.5 Years of Internship Experience</li>
+						<hr />
+						<li>Trilingual (English, Russian, Tajik)</li>
 					</ul>
 				</div>
 			</div>
@@ -71,22 +63,28 @@
 			</div>
 		</div>
 	</div>
-	<div class="education">
-		<h2>Education</h2>
-		<div class="education-section">
-			<div class="education-image">
-				<img src="/sjsu.jpg" alt="" />
+	<section class="experience">
+		<h2>Work Experience</h2>
+		<div class="work-experience">
+			<div class="work-logo">
+				<img src="/walmart.jpg" alt="" />
 			</div>
-			<div class="education-text">
-				<h3>San Jose State University</h3>
-				<h4>Bachelor of Science in Software Engineering</h4>
-				<h5>August 2021 - December 2024</h5>
-				<h5>Currently Attending</h5>
+			<div class="work-text">
+				<h3>Walmart Global Tech</h3>
+				<h4>Software Engineer</h4>
+				<h5>February 2025 - Present</h5>
 			</div>
 		</div>
-	</div>
-	<div class="experience">
-		<h2>Work Experience</h2>
+		<div class="work-experience">
+			<div class="work-logo">
+				<img src="/walmart.jpg" alt="" />
+			</div>
+			<div class="work-text">
+				<h3>Walmart Global Tech</h3>
+				<h4>Software Engineer Intern</h4>
+				<h5>June 2024 - August 2024</h5>
+			</div>
+		</div>
 		<div class="work-experience">
 			<div class="work-logo">
 				<img src="/koch.png" alt="" />
@@ -97,79 +95,122 @@
 				<h5>May 2023 - May 2024</h5>
 			</div>
 		</div>
-	</div>
-	<div class="skills">
+	</section>
+	<section class="education">
+		<h2>Education</h2>
+		<div class="education-section">
+			<div class="education-image">
+				<img src="/sjsu.jpg" alt="" />
+			</div>
+			<div class="education-text">
+				<h3>San Jose State University</h3>
+				<h4>Bachelor of Science in Software Engineering</h4>
+				<h5>August 2021 - December 2024</h5>
+			</div>
+		</div>
+	</section>
+	<section class="skills">
 		<h2>Technical Skills</h2>
 		<div class="skills-cards">
 			<div class="card card-a">
-				<h3 class="card-header red">Databases</h3>
+				<h3 class="card-header cyan">Databases</h3>
 				<div class="card-body">
 					<ul>
-						<li>PostgresSQL</li>
-						<li>MySQL</li>
-						<li>MongoDB</li>
-						<li>Redis</li>
-						<li>SQL</li>
+						<li>
+							<img src="/svgs/postgres.svg" alt="" width="25" /> PostgresSQL
+						</li>
+						<li>
+							<img src="/svgs/mysql.svg" alt="" width="25" /> MySQL
+						</li>
+						<li>
+							<img src="/svgs/mongodb.svg" alt="" width="25" /> MongoDB
+						</li>
+						<li>
+							<img src="/svgs/redis.svg" alt="" width="25" /> Redis
+						</li>
+						<li>
+							<img src="/svgs/cassandra.svg" alt="" width="25" /> Cassandra
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="card card-b">
-				<h3 class="card-header green">Languages</h3>
+				<h3 class="card-header cyan">Backend</h3>
 				<div class="card-body">
 					<ul>
-						<li>Go</li>
-						<li>TypeScript</li>
-						<li>Python</li>
-						<li>JavaScript</li>
-						<li>Java</li>
-						<li>PHP</li>
+						<li>
+							<img src="/svgs/go.svg" alt="" width="25" /> Go
+						</li>
+						<li>
+							<img src="/svgs/java.svg" alt="" width="25" /> Java
+						</li>
+						<li>
+							<img src="/svgs/python.svg" alt="" width="25" /> Python
+						</li>
+						<li>
+							<img src="/svgs/fastapi.svg" alt="" width="25" /> FastAPI
+						</li>
+						<li>
+							<img src="/svgs/nodejs.svg" alt="" width="25" /> Node.js + Express
+						</li>
+						<li>
+							<img src="/svgs/spring.svg" alt="" width="25" /> Spring Boot
+						</li>
+						<li>
+							<img src="/svgs/laravel.svg" alt="" width="25" /> Laravel
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="card card-c">
-				<h3 class="card-header cyan">Backend</h3>
+				<h3 class="card-header cyan">Frontend</h3>
 				<div class="card-body">
 					<ul>
-						<li>Go</li>
-						<li>FastAPI</li>
-						<li>Node.js</li>
-						<li>Express.js</li>
-						<li>Laravel</li>
-						<li>Django</li>
-						<li>Flask</li>
-						<li>PHP</li>
+						<li>
+							<img src="/svgs/typescript.svg" alt="" width="25" /> TypeScript
+						</li>
+						<li>
+							<img src="/svgs/javascript.svg" alt="" width="25" /> JavaScript
+						</li>
+						<li>
+							<img src="/svgs/sveltekit.svg" alt="" width="25" /> SvelteKit
+						</li>
+						<li>
+							<img src="/svgs/react.svg" alt="" width="25" /> React.js
+						</li>
+						<li>
+							<img src="/svgs/next.svg" alt="" width="25" /> Next.js
+						</li>
+						<li>
+							<img src="/svgs/vue.svg" alt="" width="25" /> Vue.js
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="card card-d">
-				<h3 class="card-header red">Frontend</h3>
+				<h3 class="card-header cyan">Others</h3>
 				<div class="card-body">
 					<ul>
-						<li>Svelte</li>
-						<li>React.js</li>
-						<li>Vue.js</li>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>SCSS</li>
-					</ul>
-				</div>
-			</div>
-			<div class="card card-e">
-				<h3 class="card-header green">Others</h3>
-				<div class="card-body">
-					<ul>
-						<li>Azure</li>
-						<li>AWS</li>
-						<li>Docker</li>
-						<li>Postman</li>
-						<li>CI/CD</li>
-						<li>Git</li>
-						<li>Snowflake</li>
+						<li>
+							<img src="/svgs/azure.svg" alt="" width="25" /> Azure
+						</li>
+						<li>
+							<img src="/svgs/aws.svg" alt="" width="25" /> AWS
+						</li>
+						<li>
+							<img src="/svgs/docker.svg" alt="" width="25" /> Docker
+						</li>
+						<li>
+							<img src="/svgs/postman.svg" alt="" width="25" /> Postman
+						</li>
+						<li>
+							<img src="/svgs/git.svg" alt="" width="25" /> Git
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 </div>
 
 <style lang="scss">
@@ -177,7 +218,7 @@
 		font-size: 1.8rem;
 		font-weight: 700;
 		color: #fff;
-		margin: 4rem 0 0 0;
+		margin: 3rem 0 0 0;
 	}
 	.content {
 		display: flex;
@@ -256,32 +297,18 @@
 				}
 			}
 			.profile-description {
-				p {
-					font-size: 1rem;
-					text-align: center;
-					font-weight: 400;
-					color: var(--text-color-lighter);
-					@include breakpoint.up('sm') {
-						font-size: 1.1rem;
-					}
-					@include breakpoint.up('lg') {
-						text-align: left;
-						font-size: 1.1rem;
-					}
-					@include breakpoint.up('xl') {
-						font-size: 1.2rem;
-					}
-				}
 				ul {
 					font-size: 1rem;
 					text-align: center;
 					font-weight: 400;
+					padding-left: 0;
 					color: var(--text-color-lighter);
 					@include breakpoint.up('sm') {
 						font-size: 1.1rem;
 					}
 					@include breakpoint.up('lg') {
 						text-align: left;
+						padding-left: 1.5rem;
 						font-size: 1.1rem;
 					}
 					@include breakpoint.up('xl') {
@@ -330,7 +357,7 @@
 		.skills-cards {
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
-			grid-template-areas: 'a' 'b' 'c' 'd' 'e';
+			grid-template-areas: 'a' 'b' 'c' 'd';
 			@include breakpoint.down('md') {
 				width: 100%;
 			}
@@ -341,14 +368,13 @@
 					'a a b b'
 					'a a b b'
 					'c c d d'
-					'c c d d'
-					'. e e .';
+					'c c d d';
 			}
 			@include breakpoint.up('xl') {
-				grid-template-columns: repeat(6, 1fr);
+				grid-template-columns: repeat(4, 1fr);
 				grid-template-areas:
-					'a a b b c c'
-					'. d d e e .';
+					'a a b b'
+					'c c d d';
 			}
 			.card {
 				width: 90%;
@@ -414,6 +440,9 @@
 							font-weight: 400;
 							color: var(--text-color-light);
 							margin: 0 0 0.5rem 0;
+							display: flex;
+							align-items: center;
+							gap: 0.5rem;
 							&:last-child {
 								margin: 0;
 							}
@@ -430,7 +459,7 @@
 		flex-direction: column;
 		align-items: center;
 		.education-section {
-			margin: 2rem 1rem 0 2rem;
+			margin: 2rem 1rem 0 0;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -494,7 +523,7 @@
 		flex-direction: column;
 		align-items: center;
 		.work-experience {
-			margin: 2rem 1rem 0 2rem;
+			margin: 2rem 1rem 0 0;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
