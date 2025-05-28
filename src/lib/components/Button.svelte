@@ -1,7 +1,4 @@
 <script lang="ts">
-	import { createBubbler } from 'svelte/legacy';
-
-	const bubble = createBubbler();
 	import type { HTMLAnchorAttributes, HTMLButtonAttributes } from 'svelte/elements';
 
 	// Generic type of button element
@@ -44,7 +41,6 @@
 <svelte:element
 	this={element}
 	class="btn btn-{variant} btn-{color} {className}"
-	onclick={bubble('click')}
 	{...rest}
 >
 	{@render children?.()}
