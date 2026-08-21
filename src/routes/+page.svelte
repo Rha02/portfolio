@@ -21,7 +21,9 @@
 						<hr />
 						<li>Building cloud-native web applications at Walmart</li>
 						<hr />
-						<li>1.5 Years of Internship Experience</li>
+						<li>1.5+ Years of Work Experience</li>
+						<hr />
+						<li>1+ Year of Internship Experience</li>
 						<hr />
 						<li>Trilingual (English, Russian, Tajik)</li>
 					</ul>
@@ -30,7 +32,7 @@
 			<div class="profile-buttons">
 				<Button
 					element="a"
-					href="https://drive.google.com/file/d/1yaQPURt1-27xRiQIHUXTsVO_aGjxeXJ-/view?usp=sharing"
+					href="https://drive.google.com/file/d/1Lj-NQhQkuS45KIDvbnYs4qTISRgP0VIX/view?usp=drive_link"
 					target="_blank"
 					variant="outline"
 					color="red"
